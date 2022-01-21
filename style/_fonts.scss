@@ -1,0 +1,30 @@
+@font-face{
+  font-family: RobotoMedium;
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Robotomedium.woff2),
+       url(../fonts/Robotomedium.woff);
+  font-display: swap;
+}
+
+@font-face{
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Roboto.woff2),
+       url(../fonts/Roboto.woff);
+  font-display: swap;
+}
+@font-face{
+  font-family: Aquarelle;
+  font-style: normal;
+  src: url(../fonts/Aquarelle.ttf);
+  font-display: swap;
+}
+@font-face{
+  font-family: MonotypeCorsiva;
+  font-style: normal;
+  src: url(../fonts/monotype-corsiva.woff2),
+        url(../fonts/monotype-corsiva.woff);
+  font-display: swap;
+}

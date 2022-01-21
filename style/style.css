@@ -235,6 +235,10 @@ header {
   color: #091292;
 }
 
+.header .menu nav.active {
+  display: block;
+}
+
 .header .menu__button {
   display: block;
   position: relative;

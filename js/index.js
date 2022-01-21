@@ -28,8 +28,7 @@ document.onreadystatechange = () => {
     e.preventDefault();
     menuButton.classList.toggle("active");
     menuButton.classList.toggle("menu__button-close");
-    nav.style.display="block";
-    nav.style.overflowY="scroll";
+    nav.classList.toggle("active");
     nav.classList.toggle("nav__active");
     main.classList.toggle("main__active");
     body.classList.toggle("main__scroll");
@@ -38,8 +37,7 @@ document.onreadystatechange = () => {
     e.preventDefault();
     menuButton.classList.toggle("active", false);
     menuButton.classList.toggle("menu__button-close", false);
-    nav.style.display="none";
-    nav.style.overflowY="hidden";
+    nav.classList.toggle("active", false);
     nav.classList.toggle("nav__active", false);    
     main.classList.toggle("main__active", false);
     body.classList.toggle("main__scroll", false);

@@ -160,6 +160,11 @@ header{
           }
         }
       }
+      
+    }
+    nav.active{
+      display: block;
+      overflow-y: scroll;
     }
     &__button{
       display: block;

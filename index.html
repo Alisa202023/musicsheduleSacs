@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/swiper-bundle.css">
+ 
+
   <title>MusicSacs</title>
 </head>
 <body class="main">
@@ -105,7 +109,7 @@
           <p>Herzlich Willkommen bei der Musikschule Saks - Ihrem Musikspezialisten in Berlin-Steglitz!</p>
           <p>Kontaktieren Sie uns noch heute und lassen Sie sich überraschen, überzeugen, unterrichten!</p>
         </div>        
-        <a href="#">Kontaktformular</a>
+        <a href="#" class="writeUS">Kontaktformular</a>
       </div> 
     </section>
     <section class="AboutUs container">
@@ -207,11 +211,130 @@
          
         </div>
       </div>
-      
-      
     </section>
+
+    <section class="reviews container">
+      <h2>Отзывы</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review">
+              <p>Slide1</p>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+    </section>
+
   </main>
-  <footer></footer>
+
+  <footer>
+    <div class="footer container">
+      <div class="footerNav">
+        <div class="footerNav__logo">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>        
+            <p>seit 14 Jahren</p>
+          </div>
+        </div>
+        <div class="footerNav__menu">
+          <div class="footerNav__menu-top">
+            <nav>
+              <ul>
+                <li><a href="#">Über uns</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Schule</a></li>
+                    <li><a href="#">Lehrer der Schule</a></li>
+                    <li><a href="#">Schüler</a></li>
+                  </ul>
+                </li>
+              </ul>           
+  
+              <ul>
+                <li><a href="#">Unterricht und Preise</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Probestunde buchen</a></li>
+                    <li><a href="#">Preise</a></li>
+                    <li><a href="#">AGB</a></li>
+                  </ul>
+                </li>
+              </ul>
+  
+              <ul>
+                <li><a href="#">Aktuelles</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Angebot des Monats</a></li>
+                    <li><a href="#">Kommende Veranstaltungen</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footerNav__menu-bottom">
+            <nav>
+              <ul>
+                <li><a href="#">Bühnenleben</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Videos</a></li>
+                  </ul>
+                </li>
+              </ul>
+  
+              <ul>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </nav>
+          </div>  
+        </div>
+
+        <div class="footerNav__contacts">
+          <div class="social">
+            <nav>
+              <ul>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="feedback">
+            <a href="#" class="writeUS">Kontaktformular</a>
+          </div>
+        </div>
+      </div>
+      <div class="footerInf">
+        <div class="footerInf__desc">
+          <div class="copyright">
+            <i class="fa fa-copyright" aria-hidden="true"></i><span>MusicSchule SAKS</span>
+          </div>
+          <div class="impressum">
+            <a href="#">Impressum</a>
+          </div>
+        </div>
+       
+       
+      </div>
+    </div>
+  </footer>
+ 
+  
+ 
+ 
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

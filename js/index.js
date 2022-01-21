@@ -40,14 +40,20 @@ document.onreadystatechange = () => {
     main.classList.toggle("main__active");
     body.classList.toggle("main__scroll");
   }
-  menuButtonClose.onclick=function(e){
-    e.preventDefault();
+  if(menuButton.classList.toggle("menu__button-close")){
     menuButton.classList.toggle("active", false);
     menuButton.classList.toggle("menu__button-close", false);
     nav.classList.toggle("active", false);
     nav.classList.toggle("nav__active", false);    
     main.classList.toggle("main__active", false);
     body.classList.toggle("main__scroll", false);
-    
   }
 };
+
+var swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

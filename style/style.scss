@@ -93,6 +93,7 @@ header{
       transition: 0.5s;
       transform: translateX(100%);
       padding-left: 34px;
+      overflow-x: hidden;
       &__active{
         display: flex;
         transform: translateX(50%);

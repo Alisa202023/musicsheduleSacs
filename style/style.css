@@ -153,6 +153,7 @@ header {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   padding-left: 34px;
+  overflow-x: hidden;
 }
 
 .header .menu nav__active {

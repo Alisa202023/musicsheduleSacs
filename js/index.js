@@ -23,6 +23,13 @@ window.addEventListener('resize', function() { //updating by width screen
   } 
 });
 
+if (document.documentElement.clientWidth > 768) {
+  contactsMain.append(contacts);
+}else{
+  nav.append(contacts);
+  contacts.style.display="block";
+}
+
 document.onreadystatechange = () => {
   menuButton.onclick=function(e){
     e.preventDefault();

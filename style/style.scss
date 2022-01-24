@@ -26,7 +26,7 @@ body{
     font-size: 36px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #E21E29;
+    color: #D21E2A;
     margin-bottom: 0.5em;
   }
   h3{
@@ -81,6 +81,7 @@ header{
   display: flex;
   justify-content: space-between;
   font-family: "RobotoMedium";
+  padding-top: 20px;
   .menu{
     nav{     
       display: none;
@@ -101,14 +102,14 @@ header{
       ul{
         background: none;
         width:100%;
-        font-size: 20px;
+        font-size: 22px;
         overflow-x: hidden;
         padding-bottom: 20px;
         li{
           margin-top: 20px;
           a{
             width:100%;
-            color: #af070a;
+            color: #D21E2A;
             line-height: 180%;
             padding-right: 2%; 
             &:hover{
@@ -126,7 +127,7 @@ header{
         }
         .sub-menu{
           display: block;
-          font-size: 18px;
+          font-size: 20px;
           transition: all 0.9s ease;
           margin-left: 10px;
           li{
@@ -149,7 +150,7 @@ header{
           }
         }
         .sub-menu .sub-menu{
-          font-size: 16px;
+          font-size: 18px;
           li{
             margin-top: 0;
             a{
@@ -218,13 +219,13 @@ header{
   width: 100%;
   margin-top: 5px;
   img{
-    max-width: 70%;
-    width: 70%;
+    max-width: 100%;
+    width: 100%;
   }
   p{
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    padding-inline: 3px;
+    font-size: 16px;
+    letter-spacing: 0.09em;
+    padding-inline-start: 3px;
     color:rgba(255, 255, 255, 0.76);
   }
 }
@@ -245,7 +246,7 @@ header{
   }
   .red{
     &:hover {
-      color:#b41719;
+      color:#D21E2A;
     }
   }
   .green{
@@ -364,6 +365,11 @@ header{
         line-height: 1.8em;
         margin-bottom: 10px;
         letter-spacing: 0.06em;
+        
+      }
+      span{
+        color:#D21E2A;
+        font-size: 1.4em;
       }
     }      
   }    
@@ -376,6 +382,7 @@ header{
   color:#fff;      
   padding: 14px 46px;
   margin-top: 15px;
+  font-size: 24px;
   animation: radial-pulse 0.9s infinite;
   &:hover{
     background: #db1a27d1;
@@ -415,14 +422,18 @@ header{
     }
     p{
       color:#fff;
-      font-size: 18px;
+      font-size: 17px;
       max-width: 166px;
       text-align: center;
       letter-spacing: 0.2em;
       text-transform: uppercase;
+      font-family: "Roboto";
+      font-weight: bold;
       line-height: 30px;
       span{
-        color:#e91c2a;
+        color:#D21E2A;
+        font-size: 1.4em;
+        font-weight: bold;
       }
     }
   }
@@ -569,7 +580,7 @@ header{
     }
     &:hover{
       .courses__item-desc{
-        background:#830d15;
+        background:#a31c25;
       }
     }
   }
@@ -581,7 +592,7 @@ header{
       max-width: 100%;
     }
     &-desc{
-      background: #c52727;
+      background: #D21E2A;
       border-radius: 10px;
       h3{
         padding-left: 10px;
@@ -595,22 +606,14 @@ header{
 .reviews{
   padding-bottom: 30px;
   margin-bottom: 30px;
-  height: 300px;
   h2{
     margin: 30px auto;
     text-align: center;
   }
-  .swiper {
-    width: 90%;
-    height: 90%;
-  }
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    
-
-    /* Center slide text vertically */
+    font-size: 18px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -618,10 +621,65 @@ header{
   .review{
     max-width: 88%;
     width: 100%;
-    height: 300px;
-    background: #fff;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    &__description{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__img{
+      max-width: 250px;
+      display: block;
+      margin:0 auto;
+      img{
+        max-width: 100%;
+        width:100%;
+        border-radius: 60%;
+      }
+      &-quote{
+        display: none;
+        margin: 0 15px;
+        float: left;
+      }
+    }
+    &__desc{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1200px;
+      width:100%;
+      text-align: left;
+      margin-left: 0; 
+      h2{
+        text-transform: none;
+        letter-spacing: 0;
+        text-align: right;
+        margin:0;
+        margin-top: 10px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 21px;
+      }
+      p{
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: justify;
+        font-style: italic;
+        line-height: 32px;
+        width: 100%;
+        letter-spacing: 0.02em;
+        color: #03183E;
+        font-family: "Roboto";
+        padding-inline-start: 0;
+      }
+    }
   }
+
 }
+
 /*--------------------------------------------------------------
                           Footer
 --------------------------------------------------------------*/
@@ -637,24 +695,23 @@ footer{
   .footerNav{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     &__logo{
       .logo{
         img{
           max-width: 100%;
           width: 100%;
         }
-        p{
-          letter-spacing: 0.4em;
-        }
       }
     }
     &__menu{
-      max-width: 870px;
+      max-width: 745px;
       width: 100%;
       nav{
-        max-width: 870px;
+        max-width: 745px;
         width: 100%;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: space-between;
         ul{
@@ -663,17 +720,17 @@ footer{
             a{
               font-family: "Roboto";
               color: #FAF9FF;
-              font-size: 26px;
+              font-size: 1.6em;
               line-height: 28px;
               &:hover{
-                color:#c2292b;
+                color:#D21E2A;
               }
             }
           }
           ul{
             li{
               a{
-                font-size: 24px;
+                font-size: 1.4em;
                 opacity: 0.8;
               }
             }
@@ -684,10 +741,11 @@ footer{
         margin-bottom: 30px;
       }
       &-bottom{
-        max-width: 341px;
+        max-width: 287px;
       }
     }
     &__contacts{
+      margin-top: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -695,11 +753,11 @@ footer{
         display: block;
         max-width: 170px;
         width: 100%;
+        margin-bottom: 10px;
         nav{
+          padding-left: 15px;
           ul{
             display: flex;
-            max-width: 170px;
-            width: 100%;
             justify-content: space-between;
             li{
               a{
@@ -709,7 +767,7 @@ footer{
                   font-size: 30px;
                   margin-right: 20px;
                   &:hover{
-                    color:#b41719;
+                    color:#D21E2A;
                     opacity: 1;
                   }
                 }
@@ -731,12 +789,16 @@ footer{
     border-top: 1px solid #fff;
     opacity: 0.8;
     margin-top: 50px;
+    display: block;
     
     &__desc{
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
       .copyright{
+        margin-top: 10px;
         i{
           color: #FAF9FF;
           font-size: 26px;
@@ -745,18 +807,19 @@ footer{
         span{
           font-family: "Roboto";
           color: #FAF9FF;
-          font-size: 26px;
+          font-size: 1.8em;
           padding-inline: 6px;
         }
       }
       .impressum{
+        margin-top: 10px;
         a{
           font-family: "Roboto";
           color: #FAF9FF;
           opacity: 0.8;
-          font-size: 26px;
+          font-size: 1.4em;
           &:hover{
-            color:#b41719;
+            color:#D21E2A;
             opacity: 1;
           }
         }
@@ -767,7 +830,47 @@ footer{
 /*--------------------------------------------------------------
                           Adaptive for main page 
 --------------------------------------------------------------*/
+@media screen and (min-width: 375px) {
+  header{
+    .logo{
+      p{
+        letter-spacing: 0.22em;
+      }
+      
+    }
+  }
+}
+@media screen and (min-width: 390px) {
+  header{
+    .logo{
+      p{
+        letter-spacing: 0.25em;
+      }
+      
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  header{
+    .logo{
+      p{
+        letter-spacing: 0.28em;
+      }
+      
+    }
+  }
+}
+
 @media screen and (min-width: 450px) {
+  header{
+    .logo{
+      p{
+        letter-spacing: 0.27em;
+        padding-inline-start: 6px;
+      }
+      
+    }
+  }
   .mainScreen{  
     background-position: bottom left 18%;
   }
@@ -812,6 +915,13 @@ footer{
       }
     }
   }
+  .reviews{
+    .review{
+      &__desc{
+        width:93%;
+      }
+    }
+  }
 }
 @media screen and (min-width: 600px) {
   .mainScreen{
@@ -847,6 +957,18 @@ footer{
       }
     }
   }
+  .reviews{
+    .review{
+      &__desc{
+        margin-left: 15px; 
+      }
+      &__img{
+        &-quote{
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) { 
@@ -873,7 +995,7 @@ footer{
     }
     .red{
       &:hover {
-        color:#e91c2a;
+        color:#D21E2A;
       }
     }
     &__intro{
@@ -927,7 +1049,14 @@ footer{
       }
     }
   }
-  
+  .reviews{
+    .review{
+      &__desc{
+        width:98%;
+      }
+    }
+  }
+ 
 }
 @media screen and (min-width: 824px) {
   body{
@@ -1034,19 +1163,48 @@ footer{
       }
     }
   }
- 
-}
-@media screen and (min-width: 1124px) {
-  .mainScreen{    
-    &__desc{  
-      margin-top: 70px;
-      margin-bottom: 390px;
-      .description{
-        max-width: 500px;
-      }  
+  .reviews{
+    .review{
+      flex-direction: row;
+      &__img{
+        max-width: 415px;
+        margin:0;
+        img{
+          border-radius: 0;
+        }
+      }
     }
   }
- 
+  
+}
+@media screen and (min-width: 1124px) {
+  
+  footer{
+    .footer{
+      .footerNav{
+        flex-direction: row;
+        align-items: inherit;
+        &__menu{
+          nav{
+            display: flex;
+          }
+        }
+      }
+      .footerInf{
+        &__desc{
+          flex-direction: row;
+          align-items: inherit;
+          .copyright{
+           margin-top: 0;
+
+          }
+          .impressum{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 1259px) {
   .mainScreen{
@@ -1076,6 +1234,17 @@ footer{
       }
     }
   }
+  .reviews{
+    .review{
+      &__description{
+        flex-direction: row;
+        align-items: inherit;
+      }
+      &__desc{
+        margin-left: 0px;     
+      }
+    }
+  }
 }
 @media screen and (min-width: 1366px) {
   .mainScreen{   
@@ -1097,6 +1266,12 @@ footer{
   
 }
 @media screen and (min-width: 1530px) {
+  .mainScreen{
+    &__desc{
+      margin-top: 70px;
+      margin-bottom: 390px;
+    }
+  }
   .courses{
     .link{
       width:100%;
@@ -1139,12 +1314,16 @@ footer{
     }
   }
 }
-@media (min-width: 2133px) and (max-width: 2399px) {
+@media screen and (min-width: 2133px){
   body{
     zoom: 108%;
   }
 }
-
+@media screen and (min-width: 2304px) {
+  body{
+    zoom: 125%;
+  }
+}
 @media screen and (min-width: 2400px) {
   body{
     zoom: 122%;

@@ -65,7 +65,7 @@ body h2 {
   font-size: 36px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #E21E29;
+  color: #D21E2A;
   margin-bottom: 0.5em;
 }
 
@@ -137,6 +137,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "RobotoMedium";
+  padding-top: 20px;
 }
 
 .header .menu nav {
@@ -167,7 +168,7 @@ header {
 .header .menu nav ul {
   background: none;
   width: 100%;
-  font-size: 20px;
+  font-size: 22px;
   overflow-x: hidden;
   padding-bottom: 20px;
 }
@@ -178,7 +179,7 @@ header {
 
 .header .menu nav ul li a {
   width: 100%;
-  color: #af070a;
+  color: #D21E2A;
   line-height: 180%;
   padding-right: 2%;
 }
@@ -198,7 +199,7 @@ header {
 
 .header .menu nav ul .sub-menu {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   margin-left: 10px;
@@ -221,7 +222,7 @@ header {
 }
 
 .header .menu nav ul .sub-menu .sub-menu {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .header .menu nav ul .sub-menu .sub-menu li {
@@ -317,14 +318,15 @@ header {
 }
 
 .logo img {
-  max-width: 70%;
-  width: 70%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .logo p {
-  font-size: 11px;
-  letter-spacing: 0.3em;
-  padding-inline: 3px;
+  font-size: 16px;
+  letter-spacing: 0.09em;
+  -webkit-padding-start: 3px;
+          padding-inline-start: 3px;
   color: rgba(255, 255, 255, 0.76);
 }
 
@@ -351,7 +353,7 @@ header {
 }
 
 .contacts .red:hover {
-  color: #b41719;
+  color: #D21E2A;
 }
 
 .contacts .green:hover {
@@ -520,6 +522,11 @@ header {
   letter-spacing: 0.06em;
 }
 
+.mainScreen__desc .description span {
+  color: #D21E2A;
+  font-size: 1.4em;
+}
+
 .writeUS {
   /*button for feedback*/
   background: #D21E2A;
@@ -529,6 +536,7 @@ header {
   color: #fff;
   padding: 14px 46px;
   margin-top: 15px;
+  font-size: 24px;
   -webkit-animation: radial-pulse 0.9s infinite;
           animation: radial-pulse 0.9s infinite;
 }
@@ -613,16 +621,20 @@ header {
 
 .AboutUs__img p {
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
   max-width: 166px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: bold;
   line-height: 30px;
 }
 
 .AboutUs__img p span {
-  color: #e91c2a;
+  color: #D21E2A;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .AboutUs__desc {
@@ -809,7 +821,7 @@ header {
 }
 
 .courses .link:hover .courses__item-desc {
-  background: #830d15;
+  background: #a31c25;
 }
 
 .courses__item {
@@ -823,7 +835,7 @@ header {
 }
 
 .courses__item-desc {
-  background: #c52727;
+  background: #D21E2A;
   border-radius: 10px;
 }
 
@@ -837,7 +849,6 @@ header {
 .reviews {
   padding-bottom: 30px;
   margin-bottom: 30px;
-  height: 300px;
 }
 
 .reviews h2 {
@@ -845,15 +856,9 @@ header {
   text-align: center;
 }
 
-.reviews .swiper {
-  width: 90%;
-  height: 90%;
-}
-
 .reviews .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,8 +873,90 @@ header {
 .reviews .review {
   max-width: 88%;
   width: 100%;
-  height: 300px;
-  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews .review__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews .review__img {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews .review__img img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 60%;
+}
+
+.reviews .review__img-quote {
+  display: none;
+  margin: 0 15px;
+  float: left;
+}
+
+.reviews .review__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+}
+
+.reviews .review__desc h2 {
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: right;
+  margin: 0;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+}
+
+.reviews .review__desc p {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  font-style: italic;
+  line-height: 32px;
+  width: 100%;
+  letter-spacing: 0.02em;
+  color: #03183E;
+  font-family: "Roboto";
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 /*--------------------------------------------------------------
@@ -894,6 +981,13 @@ footer .footerNav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footerNav__logo .logo img {
@@ -901,21 +995,15 @@ footer .footerNav__logo .logo img {
   width: 100%;
 }
 
-footer .footerNav__logo .logo p {
-  letter-spacing: 0.4em;
-}
-
 footer .footerNav__menu {
-  max-width: 870px;
+  max-width: 745px;
   width: 100%;
 }
 
 footer .footerNav__menu nav {
-  max-width: 870px;
+  max-width: 745px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -930,16 +1018,16 @@ footer .footerNav__menu nav ul li {
 footer .footerNav__menu nav ul li a {
   font-family: "Roboto";
   color: #FAF9FF;
-  font-size: 26px;
+  font-size: 1.6em;
   line-height: 28px;
 }
 
 footer .footerNav__menu nav ul li a:hover {
-  color: #c2292b;
+  color: #D21E2A;
 }
 
 footer .footerNav__menu nav ul ul li a {
-  font-size: 24px;
+  font-size: 1.4em;
   opacity: 0.8;
 }
 
@@ -948,10 +1036,11 @@ footer .footerNav__menu-top {
 }
 
 footer .footerNav__menu-bottom {
-  max-width: 341px;
+  max-width: 287px;
 }
 
 footer .footerNav__contacts {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,14 +1057,17 @@ footer .footerNav__contacts .social {
   display: block;
   max-width: 170px;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+footer .footerNav__contacts .social nav {
+  padding-left: 15px;
 }
 
 footer .footerNav__contacts .social nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 170px;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -989,7 +1081,7 @@ footer .footerNav__contacts .social nav ul li a i {
 }
 
 footer .footerNav__contacts .social nav ul li a i:hover {
-  color: #b41719;
+  color: #D21E2A;
   opacity: 1;
 }
 
@@ -1005,6 +1097,7 @@ footer .footerInf {
   border-top: 1px solid #fff;
   opacity: 0.8;
   margin-top: 50px;
+  display: block;
 }
 
 footer .footerInf__desc {
@@ -1015,6 +1108,17 @@ footer .footerInf__desc {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerInf__desc .copyright {
+  margin-top: 10px;
 }
 
 footer .footerInf__desc .copyright i {
@@ -1026,26 +1130,53 @@ footer .footerInf__desc .copyright i {
 footer .footerInf__desc .copyright span {
   font-family: "Roboto";
   color: #FAF9FF;
-  font-size: 26px;
+  font-size: 1.8em;
   padding-inline: 6px;
+}
+
+footer .footerInf__desc .impressum {
+  margin-top: 10px;
 }
 
 footer .footerInf__desc .impressum a {
   font-family: "Roboto";
   color: #FAF9FF;
   opacity: 0.8;
-  font-size: 26px;
+  font-size: 1.4em;
 }
 
 footer .footerInf__desc .impressum a:hover {
-  color: #b41719;
+  color: #D21E2A;
   opacity: 1;
 }
 
 /*--------------------------------------------------------------
                           Adaptive for main page 
 --------------------------------------------------------------*/
+@media screen and (min-width: 375px) {
+  header .logo p {
+    letter-spacing: 0.22em;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  header .logo p {
+    letter-spacing: 0.25em;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  header .logo p {
+    letter-spacing: 0.28em;
+  }
+}
+
 @media screen and (min-width: 450px) {
+  header .logo p {
+    letter-spacing: 0.27em;
+    -webkit-padding-start: 6px;
+            padding-inline-start: 6px;
+  }
   .mainScreen {
     background-position: bottom left 18%;
   }
@@ -1084,6 +1215,9 @@ footer .footerInf__desc .impressum a:hover {
     height: 50px;
     margin-top: -54px;
   }
+  .reviews .review__desc {
+    width: 93%;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -1113,6 +1247,12 @@ footer .footerInf__desc .impressum a:hover {
     height: 60px;
     margin-top: -70px;
   }
+  .reviews .review__desc {
+    margin-left: 15px;
+  }
+  .reviews .review__img-quote {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1135,7 +1275,7 @@ footer .footerInf__desc .impressum a:hover {
     color: #fff;
   }
   .contacts .red:hover {
-    color: #e91c2a;
+    color: #D21E2A;
   }
   .contacts__intro {
     margin: 0 auto;
@@ -1186,6 +1326,9 @@ footer .footerInf__desc .impressum a:hover {
   }
   .courses .link:last-child a {
     float: right;
+  }
+  .reviews .review__desc {
+    width: 98%;
   }
 }
 
@@ -1254,15 +1397,50 @@ footer .footerInf__desc .impressum a:hover {
   .header .menu nav ul {
     background-position: bottom left 9%;
   }
+  .reviews .review {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .reviews .review__img {
+    max-width: 415px;
+    margin: 0;
+  }
+  .reviews .review__img img {
+    border-radius: 0;
+  }
 }
 
 @media screen and (min-width: 1124px) {
-  .mainScreen__desc {
-    margin-top: 70px;
-    margin-bottom: 390px;
+  footer .footer .footerNav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
   }
-  .mainScreen__desc .description {
-    max-width: 500px;
+  footer .footer .footerNav__menu nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer .footerInf__desc {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+  }
+  footer .footer .footerInf__desc .copyright {
+    margin-top: 0;
+  }
+  footer .footer .footerInf__desc .impressum {
+    margin-top: 0;
   }
 }
 
@@ -1286,6 +1464,18 @@ footer .footerInf__desc .impressum a:hover {
     max-width: 460px;
     width: 33.3%;
   }
+  .reviews .review__description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+  }
+  .reviews .review__desc {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -1303,6 +1493,10 @@ footer .footerInf__desc .impressum a:hover {
 }
 
 @media screen and (min-width: 1530px) {
+  .mainScreen__desc {
+    margin-top: 70px;
+    margin-bottom: 390px;
+  }
   .courses .link {
     width: 100%;
   }
@@ -1338,9 +1532,15 @@ footer .footerInf__desc .impressum a:hover {
   }
 }
 
-@media (min-width: 2133px) and (max-width: 2399px) {
+@media screen and (min-width: 2133px) {
   body {
     zoom: 108%;
+  }
+}
+
+@media screen and (min-width: 2304px) {
+  body {
+    zoom: 125%;
   }
 }
 

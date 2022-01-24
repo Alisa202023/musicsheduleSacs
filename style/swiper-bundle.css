@@ -213,6 +213,7 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
+  display: none;
   left: 10px;
   right: auto;
 }
@@ -222,6 +223,7 @@
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
+  display: none;
   right: 10px;
   left: auto;
 }
@@ -613,4 +615,19 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
+}
+
+@media screen and (min-width: 450px) {
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    display: block;
+    left: 10px;
+    right: auto;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    display: block;
+    right: 10px;
+    left: auto;
+  }
 }

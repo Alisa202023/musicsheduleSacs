@@ -57,3 +57,17 @@ var swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+document.querySelector("#read").onclick = function(){
+  document.getElementById('aboutDescOne').style.display='block'; 
+  document.getElementById('aboutDescTwo').style.display='block'; 
+  document.getElementById('read').style.display='none'; 
+  document.getElementById('unread').style.display='block';
+}
+
+document.querySelector("#unread").onclick = function(){
+  document.getElementById('aboutDescOne').style.display='none'; 
+  document.getElementById('aboutDescTwo').style.display='none'; 
+  document.getElementById('unread').style.display='none'; 
+  document.getElementById('read').style.display='block';
+}

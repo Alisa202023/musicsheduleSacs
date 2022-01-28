@@ -345,7 +345,7 @@ header{
 --------------------------------------------------------------*/
 .mainScreen{
   display: flex;
-  height:100%;
+  height: 30em;
   max-width: 100%;
   width:100%;
   background: url("../img/backgroundMob.png");
@@ -353,12 +353,14 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   &__desc{   
-    margin-bottom: 100px;
     text-align: center;
+  //  margin-bottom: 150px;
     .description{
+      display: block;
+        padding-top: 100px;
       max-width: 100%;
-      margin-top: 30px;
-      margin-bottom: 40px;
+    //  padding-top: 30px;
+     padding-bottom: 40px;
       p{
         color:rgba(255, 255, 255, 0.849);
         font-size: 1em;
@@ -436,6 +438,7 @@ header{
         font-weight: bold;
       }
     }
+   
   }
   &__desc{
     margin-left: 20px;
@@ -448,6 +451,13 @@ header{
       letter-spacing: 0.02em;
       color: #03183E;
       font-family: "Roboto";
+    }
+    button{
+      border:none;
+      cursor: pointer;
+    }
+    #aboutDescOne, #aboutDescTwo, #unread{
+      display: none;
     }
   }
 }
@@ -706,10 +716,10 @@ footer{
       }
     }
     &__menu{
-      max-width: 745px;
+      max-width: 812px;
       width: 100%;
       nav{
-        max-width: 745px;
+        max-width: 812px;
         width: 100%;
         display: none;
         flex-wrap: wrap;
@@ -925,15 +935,20 @@ footer{
 }
 @media screen and (min-width: 600px) {
   .mainScreen{
+    height: 40em;
     background: url("../img/background.png");
-    background-position: bottom left;
+    background-position: bottom left 50%;
     background-repeat: no-repeat;
     background-size: cover;
     &__desc{   
       text-align: left;   
       .description{
         max-width: 23.875em;
-        margin-top: 20px;
+        p{
+          font-size: 1.125em;
+        }
+       
+      //  margin-top: 20px;
       } 
     }
   }
@@ -1003,11 +1018,7 @@ footer{
       justify-content: space-between;
     }
   }
-  .mainScreen{
-    .writeUS{
-      padding: 14px 70px;
-    }
-  }
+ 
   .AboutUs{
     display: flex;
     &__desc{
@@ -1067,11 +1078,8 @@ footer{
   .mainScreen{  
     background-position: bottom right 44%; 
     &__desc{
-      margin-bottom: 300px;
+    //  margin-bottom: 300px;
       .description{
-        p{
-          font-size: 1.125em;
-        }
       } 
     }
   }
@@ -1105,22 +1113,33 @@ footer{
       }
     }
   }
-  
-
 }
+@media screen and (min-width: 880px) {
+  .mainScreen{  
+    &__desc{
+    //  margin-bottom: 300px;
+      .description{
+        padding-top: 150px;
+      } 
+    }
+    .writeUS{
+      padding: 14px 70px;
+    }
+  }
+}
+
 @media screen and (min-width: 934px) {
   body .button{
     max-width: 258px;
     font-size: 24px;
-    padding: 16px 45px;    
+    padding: 16px 30px;    
     margin:20px 0 0 0;
   }
   
   .mainScreen{     
     &__desc{
-      
       .description{
-        max-width: 450px;
+        max-width: 400px;
       } 
     }
   }
@@ -1153,7 +1172,17 @@ footer{
 @media screen and (min-width: 1024px) {
   .mainScreen{
     background-position: bottom right 38%;
-  } 
+    &__desc{
+    //  margin-bottom: 190px;
+      .description{
+     //   max-width: 350px;
+      //  padding-top: 70px;
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
   .header{
     .menu{
       nav{        
@@ -1178,7 +1207,6 @@ footer{
   
 }
 @media screen and (min-width: 1124px) {
-  
   footer{
     .footer{
       .footerNav{
@@ -1209,14 +1237,14 @@ footer{
 @media screen and (min-width: 1259px) {
   .mainScreen{
     &__desc{
+   //   margin-bottom: 240px;
       .description{
-        max-width: 600px;
+        max-width: 550px;
+ //       padding-top: 70px;
         p{
-          font-size: 22px;
-          line-height: 40px;
-          margin-bottom: 20px;
+          font-size: 20px;
         }
-      }  
+      }
     }
   }
   .courses{
@@ -1247,15 +1275,9 @@ footer{
   }
 }
 @media screen and (min-width: 1366px) {
-  .mainScreen{   
+  .mainScreen{
     &__desc{
-      .description{
-        max-width: 550px;
-        p{
-          margin-top: 20px;
-          font-size: 24px;
-        }
-      }  
+ //     margin-bottom: 340px;
     }
   }
   .main{
@@ -1263,13 +1285,25 @@ footer{
       transform: translateX(-30%);
     }
   }
-  
+}
+@media screen and (min-width:1400px){
+  .mainScreen{
+    height: 54em;
+    &__desc{
+ //     margin-bottom: 340px;
+    }
+  }
 }
 @media screen and (min-width: 1530px) {
   .mainScreen{
+    
     &__desc{
-      margin-top: 70px;
-      margin-bottom: 390px;
+    //  margin-bottom: 450px;
+      .description{
+        p{
+          font-size: 24px;
+        }
+      }
     }
   }
   .courses{
@@ -1291,32 +1325,39 @@ footer{
 }
 @media screen and (min-width: 1570px) {
   .mainScreen{
+    
     &__desc{
-      margin-bottom: 500px;
-      .description{
-        max-width: 600px;
-      }
+ //     margin-bottom: 340px;
     }
   }
-  
 }
 @media screen and (min-width: 1700px) {
-  .mainScreen{
-    &__desc{
-      .description{
-        max-width: 700px;
-      }
-    }
-  }
+  
   .main{
     &__active{
       transform: translateX(-25%);
     }
   }
 }
+@media screen and (min-width:1920px){
+  .mainScreen{
+    &__desc{
+      .description{
+        max-width: 670px;
+  //      padding-top: 150px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1930px){
+  body{
+    zoom: 110%;
+  }
+  
+}
 @media screen and (min-width: 2133px){
   body{
-    zoom: 108%;
+    zoom: 120%;
   }
 }
 @media screen and (min-width: 2304px) {
@@ -1326,31 +1367,49 @@ footer{
 }
 @media screen and (min-width: 2400px) {
   body{
-    zoom: 122%;
+    zoom: 131%;
   }
 }
 
 @media screen and (min-width: 2560px) {
   body{
-    zoom: 136%;
+    zoom: 150%;
   }
 }
 
 @media screen and (min-width: 2880px) {
   body{
-    zoom: 146%;
+    zoom: 202%;
   }
 }
 
 @media screen and (min-width: 3840px) {
   body{
-    zoom: 195%;
+    zoom: 206%;
+  }
+}
+
+
+@media screen and (min-width: 3900px) {
+  body{
+    zoom: 220%;
+  }
+}
+
+@media screen and (min-width: 4240px) {
+  body{
+    zoom: 267%;
+  }
+}
+@media screen and (min-width: 5120px) {
+  body{
+    zoom: 295%;
   }
 }
 
 @media screen and (min-width: 5760px) {
   body{
-    zoom: 295%;
+    zoom: 330%;
   }
 }
 @media screen and (min-width: 7680px) {
